@@ -1,0 +1,40 @@
+
+@font-face {
+    font-family: Myriad-pro;
+    src: url(../fonts/MYRIADPRO-REGULAR.ttf);
+}
+.confidentiality {
+    max-width: 1200px;
+    padding: 100px 20px;
+    margin: 0 auto;
+    color: #353535;
+    font-family: Myriad-pro;
+}
+.confidentiality p {
+}
+.confidentiality h1 {
+    background-color: rgb(236, 234, 234);
+}
+.confidentiality h2 {
+    margin-top: 50px;
+}
+.confidentiality h3 {
+    margin-top: 30px;
+}
+.blue {
+
+}
+.orange {
+    text-decoration: none;
+    color: #edb112;
+}
+.bleck {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+@media (max-width: 500px) {
+    .confidentiality h1 {
+        font-size: 30px;
+    }
+}

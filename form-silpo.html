@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма реєстрації Silpo</title>
+    <link rel="icon" href="img/white_whirlpool.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style-main.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper-form">
+        <header class="header">
+            <div class=" header-container _container-max">
+                <div class="header-label "><a href="index.html">Whirlpool</a></div>
+                <div class="header-register">Зареєструвати Ваш прилад</div>
+            </div>
+        </header>
+        <div class="section-register _container-min">
+            <h1>Зареєструвати Ваш прилад</h1>
+            <div class="section-register_form">
+                <form class="section-register_form-info" action="#" method="post" enctype="multipart/form-data"
+                    id="register_form" name="register_form">
+                    <h2>Особиста інформація</h2>
+                    <div>
+                        <p>Ім'я українською мовою згідно паспорту <span>*</span></p>
+                        <div class="error-text">Незаповнене поле *</div>
+                        <input placeholder="Введіть ім'я" tabindex="1" name="firstname" type="text">
+                    </div>
+                    <div>
+                        <p>Прізвище українською мовою згідно паспорту <span>*</span></p>
+                        <div class="error-text">Незаповнене поле *</div>
+                        <input placeholder="Введіть прізвище" tabindex="2" name="lastname" type="text">
+                    </div>
+                    <div>
+                        <p>Моб. телефон <span>*</span></p>
+                        <div class="error-text">Телефон має складатися з 10 цифр. Приклад 0998765473 *</div>
+                        <input placeholder="0ххххххххх" tabindex="3" name="userphone" type="tel">
+                    </div>
+                    <div>
+                        <p>Підтвердження моб. телефону <span>*</span></p>
+                        <div class="error-text">Номера не співпадають *</div>
+                        <input placeholder="0ххххххххх" tabindex="4" name="userphonerepeat" type="tel">
+                    </div>
+                    <div>
+                        <p>Електронна пошта <span>*</span></p>
+                        <div class="error-text">Будь ласка введіть валідну пошту. Приклад example@gmail.com *</div>
+                        <input placeholder="Введіть адресу" tabindex="5" name="useremail" type="text">
+                    </div>
+                    <div>
+                        <p>Підтвердження електронної пошти <span>*</span></p>
+                        <div class="error-text">Пошти не співпадають *</div>
+                        <input placeholder="Введіть адресу" tabindex="6" name="emailrepeat" type="text">
+                    </div>
+                    <h2>Адреса</h2>
+                    <p>Область <span>*</span></p>
+                    <div class="error-text">Незаповнене поле *</div>
+                    <select tabindex="7" name="area" class="select" id="#">
+                        <option value="" selected disabled>Оберіть варіанти</option>
+                    </select>
+                    <div>
+                        <p>Місто/населений пункт <span>*</span></p>
+                        <div class="error-text">Незаповнене поле *</div>
+                        <input placeholder="Введіть назву" tabindex="8" name="city" type="text">
+                    </div>
+                    <div>
+                        <p>Індекс <span>*</span></p>
+                        <div class="error-text">Незаповнене поле *</div>
+                        <input tabindex="9" name="index" type="text">
+                    </div>
+                    <div>
+                        <p>Адреса відділення Укрпошти <span>*</span></p>
+                        <p class="text-info">(на яке робимо відправку подарункового сертифікату)</p>
+                        <div class="error-text">Незаповнене поле *</div>
+                        <input placeholder="Введіть адресу відділення" tabindex="10" name="department" type="text">
+
+                    </div>
+                    <h2>Конфіденційність</h2>
+                    <p class="p-radio">Я повністю приймаю повідомлення про порядок поводження з особистою інформацією, а
+                        також всі умови
+                        та строки ТОВ "Вірлпул Україна". Для того, щоб ознайомитись з повідомленням про порядок
+                        поводження з особистою інформацією натисніть <a href="confidentiality.html"
+                            target="_blank">тут</a></p>
+                    <div class="error-text">Незаповнене поле *</div>
+                    <div class="form-row">
+                        <p>Я згоден(на) <span>*</span></p>
+                        <div class="form_radio">
+                            <input id="radio-1" type="checkbox" name="radio" value="1">
+                            <label for="radio-1">Так</label>
+                        </div>
+                        <!-- <div class="form_radio">
+                            <input id="radio-2" type="radio" name="radio" value="2">
+                            <label for="radio-2">Ні</label>
+                        </div> -->
+                        </label>
+                    </div>
+                    <h2>Повідомлення про відправлення інформації про рекламні кампанії та спеціальні акції</h2>
+                    <p class="p-radio">Я погоджуюсь отримувати від ТОВ "Вірлпул Компані Україна" повідомлення
+                        електронною поштою та через смс-повідомлення про рекламні кампанії, спеціальні акції, події та
+                        іншу інформацію, яка описана у повній версії повідомлення про порядок поводження з персональними
+                        даними. <span>*</span></p>
+                    <div class="error-text">Незаповнене поле *</div>
+                    <div class="form-row">
+                        <!-- <p>Я згоден(на) <span>*</span></p> -->
+                        <div class="form_radio">
+                            <input id="radio-3" type="radio" name="rad" value="3">
+                            <label for="radio-3">Так</label>
+                        </div>
+                        <div class="form_radio">
+                            <input id="radio-4" type="radio" name="rad" value="4">
+                            <label for="radio-4">Ні</label>
+                        </div>
+                    </div>
+                    <h2>Інформація про прилад</h2>
+                    <p>Прилад <span>*</span></p>
+                    <div class="error-text">Незаповнене поле *</div>
+                    <select tabindex="11" name="instrument" class="select" id="#">
+                        <option value="" selected disabled>Назва приладу</option>
+                        <option value="Вбудована посудомийна машина">Вбудована посудомийна машина</option>
+                        <option value="Холодильник">Холодильник</option>
+                        <option value="Вбудований холодильник">Вбудований холодильник</option>
+                        <option value="Морозильна камера">Морозильна камера</option>
+                        <option value="Вбудована морозильна камера">Вбудована морозильна камера</option>
+                        <option value="Мікрохвильова піч">Мікрохвильова піч</option>
+                        <option value="Вбудована мікрохвильова піч">Вбудована мікрохвильова піч</option>
+                        <option value="Вбудована варильна поверхня">Вбудована варильна поверхня</option>
+                        <option value="Вбудована духова шафа">Вбудована духова шафа</option>
+                        <option value="Прально-сушильна машина">Плита</option>
+                    </select>
+                    <p>Бренд <span>*</span></p>
+                    <div class="error-text">Незаповнене поле *</div>
+                    <select tabindex="12" name="brand" class="select" id="#">
+                        <option value="" selected disabled>Оберіть варіанти</option>
+                        <option value="Whirlpool">Whirlpool</option>
+                        <option value="HOTPOINT">HOTPOINT</option>
+                    </select>
+                    <p>Назва моделі <span>*</span></p>
+                    <div class="error-text">Незаповнене поле *</div>
+                    <select tabindex="13" name="modelname" class="select" id="#">
+                        <option value="" selected disabled>Оберіть варіанти</option>
+                    </select>
+                    <div>
+                        <p>Код 12nc (комерційний код) *</p>
+                        <div class="error-text">Перевірте модель та бренд *</div>
+                        <input class="input-gray" placeholder="" tabindex="14" name="nc12" type="text">
+                    </div>
+                    <div>
+                        <p>Серійний номер <span>*</span></p>
+                        <div class="error-text">Серійний номер має складається з 12 цифр. Прилад 379633322115 *</div>
+                        <div class="input-info">
+                            <input placeholder="" tabindex="15" name="serialnumber" type="text">
+                            <span class="span-hover">i</span>
+                            <span class="input-info_text">Серійний номер є унікальним
+                                ідентифікатором вашого
+                                пристрою
+                                (наприклад. 379633322115).</span>
+                        </div>
+                    </div>
+                    <p>Дата придбання <span>*</span></p>
+                    <div class="error-text">У акції беруть участь лише фіскальні чеки від 6-ого вересня 2021 року. Також
+                        з моменту покупки має пройти не менше ніж 14 днів *</div>
+                    <div class="select-data">
+                        <input type="date" name="purchasedate" id="purchasedate">
+                    </div>
+                    <div>
+                        <p>Вартість приладу <span>*</span></p>
+                        <div class="error-text">Незаповнене поле *</div>
+                        <input placeholder="" tabindex="19" name="cost" type="text">
+                    </div>
+                    <div>
+                        <p>Номер фіксального чеку <span>*</span></p>
+                        <div class="error-text">Незаповнене поле *</div>
+                        <input placeholder="" tabindex="19" name="fiscalCheck" type="text">
+                    </div>
+                    <p>Назва магазину <span>*</span></p>
+                    <div class="error-text">Незаповнене поле *</div>
+                    <select tabindex="20" name="shopname" class="select" id="#">
+                        <option value="" selected disabled>Оберіть варіанти</option>
+                        <option value="COMFY">COMFY</option>
+                        <option value="Eldorado">Eldorado</option>
+                        <option value="Фокстрот">Фокстрот</option>
+                        <option value="Епіцентр">Епіцентр</option>
+                        <option value="Rozetka">Rozetka</option>
+                        <option value="whirlpool-store.com.ua">whirlpool-store.com.ua</option>
+                    </select>
+                    <div>
+                        <p>Поле для завантаження фото Реєстраційного номеру облікової картки платника податків
+                            <span>*</span>
+                        </p>
+                        <div class="error-text">Незаповнене поле *</div>
+                        <div class="input-photo">
+                            <input class="hide inputfile" tabindex="21" type="file" id="upload2"
+                                data-multiple-caption="{count} files selected" name="photodownload2">
+                            <label for="upload2">
+                                <span>Завантажити фото</span>
+                                <div class="button-send" tabindex="22">Завантажити</div>
+                            </label>
+                        </div>
+                        <p class="p-text">Подарунки - оподатковуються. Фото Реєстраційного номеру облікової картки
+                            платника податків є
+                            обов'язковим.</p>
+                    </div>
+                    <div>
+                        <p>Поле для завантаження фото чеку <span>*</span></p>
+                        <div class="error-text">Незаповнене поле *</div>
+                        <div class="input-photo">
+                            <input class="hide inputfile" tabindex="21" type="file" id="upload"
+                                data-multiple-caption="{count} files selected" name="photodownload">
+                            <label for="upload">
+                                <span>Завантажити фото</span>
+                                <div class="button-send" tabindex="22">Завантажити</div>
+                            </label>
+                        </div>
+                        <p class="p-text">На зображенні чеку має бути чітко видно дату купівлі, назву та адресу
+                            магазину, назву та
+                            модель
+                            виробу, ціну придбання.</p>
+                    </div>
+                    <p class="text-bold">Звертаємо Вашу увагу, що перевірку справжності чека буде проводитись через сайт
+                        <a href="https://cabinet.tax.gov.ua/cashregs/check" target="_blank">податкової служби</a>.
+                    </p>
+                    <p class="p-last">Обов'язкові поля <span>*</span></p>
+                    <div class="g-recaptcha" data-sitekey="6LcP4UocAAAAAF1o53ZfYhGM00Ydx0glgYlvGeUf"></div>
+                    <div class="text-danger" id="recaptchaError"></div>
+                    <div class="button-end">
+                        <button id="mainsubmitbutton" class="button-send button-send_big" tabindex="23"
+                            type="submit">Зареєструвати</button>
+                    </div>
+                    <p id="validationError">Перевірте правильність заповнення полей.</p>
+                </form>
+                <div class="section-register_form-img">
+                    <img src="img/form-img.png" alt="img">
+                </div>
+            </div>
+        </div>
+        <div class="ot-sdk-bg" id="successPopup" style="display: none">
+            <div class="vertical-align-content">
+                <div class="ot-sdk-row">
+                    <div class="ot-sdk-twelve ot-sdk-columns">
+                        <div class="banner-header">
+                            <h3 class="onetrust-policy-title">Дякуємо за реєстрацію!</h3>
+                            <button class="onetrust-close-btn-container" id="successClose"><img src="img/close.png"
+                                    alt="close"></button>
+                        </div>
+                        <p class="onetrust-policy-text">Очікуйте повідомлення на Вашу електронну пошту!</p>
+                    </div>
+                    <div class="ot-sdk-twelve ot-sdk-columns">
+                        <div class="banner-actions-container">
+                            <a href="index.html" class="banner-actions-container_cookies">Перейти на
+                                головну</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ot-sdk-bg" id="errorPopup" style="display: none;">
+            <div class="vertical-align-content">
+                <div class="ot-sdk-row">
+                    <div class="ot-sdk-twelve ot-sdk-columns">
+                        <div class="banner-header">
+                            <h3 class="onetrust-policy-title">Сталася помилка</h3>
+                            <button class="onetrust-close-btn-container" id="errorClose"><img src="img/close.png"
+                                    alt="close"></button>
+                        </div>
+                        <p class="onetrust-policy-text" id="errorPoputText"></p>
+                    </div>
+                    <div class="ot-sdk-twelve ot-sdk-columns">
+                        <div class="banner-actions-container">
+                            <!-- <a id="errorCloseAnchor" class="banner-actions-container_cookies">Ок</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="loader">
+            <div class="cssload-thecube">
+                <div class="cssload-cube cssload-c1"></div>
+                <div class="cssload-cube cssload-c2"></div>
+                <div class="cssload-cube cssload-c4"></div>
+                <div class="cssload-cube cssload-c3"></div>
+            </div>
+        </div> -->
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+    <!-- <script src="js/utils.js"></script> -->
+    <script src="js/silpo.js"></script>
+    <!-- <script src="js/validate.js"></script> -->
+    <script src="js/script.js"></script>
+    <!-- <script src="js/listeners.js"></script> -->
+    <!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
+
+</body>
+
+</html>
