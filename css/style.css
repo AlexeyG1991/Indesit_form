@@ -782,7 +782,6 @@ label.added-file {
 		display: none;
 	}
 }
-
 @media (min-width: 410px) {
 	.button-send {
 		height: 100%;
